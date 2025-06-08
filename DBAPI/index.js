@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const pool = require('./db'); // This should be a configured `pg.Pool` export
+const pool = require('./db'); 
 require('dotenv').config();
 
 const app = express();
@@ -43,7 +43,7 @@ for (const table of tables) {
 }
 
 // Server listening
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
     console.log(`Connected Successfully on PORT ${PORT}`);
 });
