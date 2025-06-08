@@ -43,7 +43,8 @@ for (const table of tables) {
 }
 
 // Server listening
+
 const PORT = process.env.PORT;
-app.listen(PORT, () => {
-    console.log(`Connected Successfully on PORT ${PORT}`);
+app.listen(PORT,()=>{
+    console.log(`Connected successfully.. on PORT ${PORT}`);
 });
